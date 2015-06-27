@@ -4,3 +4,4 @@
 *.dvi
 *.log
 *.out
+*.DS_Store
