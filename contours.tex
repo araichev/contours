@@ -11,7 +11,7 @@
 %\setlength{\hfuzz}{2pt}  % Ignore overlong lines only 2pt over
 \pagenumbering{gobble}  % Remove page numbers
 \renewcommand{\thefootnote}{\fnsymbol{footnote}}  % Use symbolic footnotes
-\graphicspath{{pics/}}  % Set path for images
+\graphicspath{{images/}}  % Set path for images
 \newcommand{\mi}{\text{i}}  % Math i (= sqrt(-1))
 %==============================================================================
 \begin{document}
@@ -21,7 +21,7 @@
 \begin{center}
 {\fontsize{2cm}{1em}\selectfont CONTOURS}\\[1.5em]
 {\fontsize{0.7cm}{1em}\selectfont\itshape A Mathematical Coloring Book}\\[4em]
-\includegraphics[width=160mm, angle=90]{cover.pdf}\\
+\includegraphics[width=160mm, angle=90]{images/cover.pdf}\\
 \vfill
 {\fontsize{0.6cm}{1em}\selectfont ALEXANDER RAICHEV}
 \end{center}
@@ -64,8 +64,8 @@ Working with a complex function simplifies things, because then you can  generat
 Because the graph of $f$ is four-dimensional, I took the absolute value of $f$, which can be plotted in three dimensions and therefore yields a two-dimensional contour plot; see Figure~\ref{fig:3d}.
 
 \begin{figure}[!ht]
-(a) \includegraphics[width=60mm]{tutorial_3d.png}\qquad
-(b) \includegraphics[width=60mm]{tutorial_contour.pdf}
+(a) \includegraphics[width=60mm]{images/tutorial_3d.png}\qquad
+(b) \includegraphics[width=60mm]{images/tutorial_contour.pdf}
 \caption{
 (a) Plot of $|f(z)|$ for the complex function $f(z) = z^2  - 0.99 + 0.1\mi$
 (b) Contour plot of $|f(z)|$ with contour heights labeled
@@ -84,10 +84,10 @@ For this example, I used the zeroth, first, and second iterates of $f$, chose tw
 Finally, I rotated the picture by 90 degrees.
 
 \begin{figure}[!htb]
-(a) \includegraphics[width=60mm]{tutorial_c0.pdf}\qquad
-(b) \includegraphics[width=60mm]{tutorial_c1.pdf}\\
-(c) \includegraphics[width=60mm]{tutorial_c2.pdf}\qquad
-(d) \includegraphics[width=60mm]{tutorial_c012.pdf}
+(a) \includegraphics[width=60mm]{images/tutorial_c0.pdf}\qquad
+(b) \includegraphics[width=60mm]{images/tutorial_c1.pdf}\\
+(c) \includegraphics[width=60mm]{images/tutorial_c2.pdf}\qquad
+(d) \includegraphics[width=60mm]{images/tutorial_c012.pdf}
 \caption{
 Labeled contour plots with contours at heights 0.5 and 1.
 (a) $|f^{\circ 0}(z)|$ 
@@ -109,8 +109,7 @@ There are infinitely many functions to choose from, and the ones in this book ar
 Q: Can I make pictures like these too?
 
 A: You bet!
-One quick way to do so is run Sage online (for free) and upload this Sage worksheet I made as a template to start drawing:
-\url{https://www.dropbox.com/s/yfgagld40te9csf/contours_template.sws}.
+One quick way to do so is run Sage online (for free), upload the Sage worksheet I used to make the images in this book (located at \url{https://github.com/araichev/contours}) and modify to your delight.
 %-----------------------------------------------------------------------------
 \section*{Further Reading}
 
@@ -127,7 +126,7 @@ Thanks to Poppy Constantine and Sasha Rubin for their constructive feedback.
 %-----------------------------------------------------------------------------
 \section*{Copyright}
 
-This work was produced 2013-04-03 by Alexander Raichev in Auckland, New Zealand and is licensed under a \href{http://creativecommons.org/licenses/by-sa/3.0/deed.en_US}{Creative Commons Attribution-ShareAlike 3.0 Unported License}.
+This work was produced 2013-04-03 by Alexander Raichev and is licensed under a \href{http://creativecommons.org/licenses/by-nc-sa/4.0/}{Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License}.
 %\includegraphics[width=20mm]{cc_by_sa.png}
 
 %-----------------------------------------------------------------------------
@@ -137,7 +136,7 @@ This work was produced 2013-04-03 by Alexander Raichev in Auckland, New Zealand 
 %-----------------------------------------------------------------------------
 \pagebreak
 \begin{figure}[!ht]
-\includegraphics[width=230mm, angle=-90]{caterpillar.pdf}
+\includegraphics[width=230mm, angle=-90]{images/caterpillar.pdf}
 \caption{
 Contour plot of $|f^{\circ j}(z)|$ for $j = 0, 1, \ldots, 8$ and the complex function $f(z) = z - 1 + 1/z^3$.
 Contour heights 0.5 and 1.
@@ -146,7 +145,7 @@ Contour heights 0.5 and 1.
 %-----------------------------------------------------------------------------
 \pagebreak
 \begin{figure}[!ht]
-\includegraphics[width=160mm, height=210mm, angle=180]{indian_caterpillar.pdf}
+\includegraphics[width=160mm, height=210mm, angle=180]{images/indian_caterpillar.pdf}
 \caption{
 Contour plot of $|f^{\circ j}(z)|$ for $j = 2, 3, 4$ and the complex function $f(z) = \sin(z - 1 + 1/z^3)$.
 Contour heights 0.5 and 1.
@@ -155,7 +154,7 @@ Contour heights 0.5 and 1.
 %-----------------------------------------------------------------------------
 \pagebreak
 \begin{figure}[!ht]
-\includegraphics[height=230mm]{three_monkeys.pdf}
+\includegraphics[height=230mm]{images/three_monkeys.pdf}
 \caption{
 Contour plot of $|f^{\circ j}(z)|$ for $j = 1, 2, 3$ and the complex function $f(z) = z + 1 -0.9\mi + 1/z^7$.
 Contour heights 0.2, 0.75, and 1.
@@ -164,7 +163,7 @@ Contour heights 0.2, 0.75, and 1.
 %-----------------------------------------------------------------------------
 \pagebreak
 \begin{figure}[!ht]
-\includegraphics[width=160mm, height=170mm]{three_monkeys_eaten.pdf}
+\includegraphics[width=160mm, height=170mm]{images/three_monkeys_eaten.pdf}
 \caption{
 Contour plot of $|f^{\circ j}(z)|$ for $j = 1, 2, 3$ and the complex function $f(z) = \log(z + 1 -0.9\mi + 1/z^7)$.
 Contour heights 0.1, 1, and 10.
@@ -173,7 +172,7 @@ Contour heights 0.1, 1, and 10.
 %-----------------------------------------------------------------------------
 \pagebreak
 \begin{figure}[!ht] 
-\includegraphics[width=230mm, angle=-90]{mr_fancy_pants.pdf}
+\includegraphics[width=230mm, angle=-90]{images/mr_fancy_pants.pdf}
 \caption{
 Contour plot of $\sin(|f^{\circ 2}(z)|)$ for the complex function $f(z) = \exp(z) - 0.99 + 0.1\mi$.
 Contour heights 0.5 and 0.9.
@@ -182,7 +181,7 @@ Contour heights 0.5 and 0.9.
 %-----------------------------------------------------------------------------
 \pagebreak
 \begin{figure}[!ht]
-\includegraphics[width=160mm]{mite.pdf}\\[10mm]
+\includegraphics[width=160mm]{images/mite.pdf}\\[10mm]
 \caption{
 Contour plot of $|f^{\circ j}(z)|$ for $j = 1, 2$ and the complex function $f(z) = \tan(z^2  + z^2 - 0.99 + 0.1\mi)$.
 Contour heights 0.5 and 1.
@@ -191,7 +190,7 @@ Contour heights 0.5 and 1.
 %-----------------------------------------------------------------------------
 \pagebreak
 \begin{figure}[!ht] 
-\includegraphics[height=160mm, angle=-90]{landscape.pdf}\\[10mm]
+\includegraphics[height=160mm, angle=-90]{images/landscape.pdf}\\[10mm]
 \caption{
 Contour plot of $|f^{\circ j}(z)|$ for $j=1, 2, \ldots, 7$ and the complex function $f(z) = \exp(z) + 0.1 + 0.3\mi$.
 Contour heights 0.2 and 0.5.
@@ -200,7 +199,7 @@ Contour heights 0.2 and 0.5.
 %-----------------------------------------------------------------------------
 \pagebreak
 \begin{figure}[!ht] 
-\includegraphics[height=160mm, angle=90]{embryos.pdf}\\[10mm]
+\includegraphics[height=160mm, angle=90]{images/embryos.pdf}\\[10mm]
 \caption{
 Contour plot of $|f^{\circ j}(z)|$ for $j=1, 2, 3, 4$ and the complex function $f(z) = \cot(z)(1/z - 0.3 + 0.7\mi)$.
 Contour heights 1 and 10.
@@ -209,7 +208,7 @@ Contour heights 1 and 10.
 %-----------------------------------------------------------------------------
 \pagebreak
 \begin{figure}[!ht] 
-\includegraphics[width=160mm, height=210mm]{gingerbreadman.pdf}
+\includegraphics[width=160mm, height=210mm]{images/gingerbreadman.pdf}
 \caption{
 Contour plot of $\sin(x_{65} y_{65})$ for $(x_{65}, y_{65}) = f^{\circ 65}(x, y)$ and the Gingerbreadman map $f(x, y) = (1 - y + |x|, x)$.
 Contour height 0.
@@ -218,7 +217,7 @@ Contour height 0.
 %-----------------------------------------------------------------------------
 \pagebreak
 \begin{figure}[!ht] 
-\includegraphics[width=160mm, height=210mm]{arnolds_cat3.pdf}
+\includegraphics[width=160mm, height=210mm]{images/arnolds_cat.pdf}
 \caption{
 Contour plot of $\tan(x_8 + y_8)$ for $(x_8, y_8) = f^{\circ 8}(x, y)$ and  $f(x, y) = (2x + (y \mod 3), x + (y \mod 3))$.
 Contour height 0.
