@@ -4,7 +4,7 @@ First published by Alexander Raichev on 2013-04-03.
 
 The book was produced using `LaTeX <https://www.ctan.org/>`_.  
 from the source code in ``contours.tex`` and ``contours.bib``.  
-To compile the book into PDF yourself, install LaTeX and run ``pdflatex contours``.
+To compile the book into PDF yourself, install LaTeX and run ``pdflatex contours && bibtex contours && pdflatex contours && pdflatex contours``.
 
 The book's images were produced using `Sage <http://www.sagemath.org/>`_ from the source code in the Sage notebook ``contours.sws``.
 
